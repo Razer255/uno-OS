@@ -64,10 +64,10 @@ int  lastClockHour    = 0;
 int  lastClockMinute  = 0;
 
 // Picture frame state
-int picIndex        = 0;
-int prevPicIndex    = -1;    // track previous index to detect changes
-int totalPictures   = 0;
-unsigned long picLastChange = 0;
+int picIndex        = -1;
+int prevPicIndex    = 1;    // track previous index to detect changes
+int totalPictures   = -1;
+unsigned long picLastCha0nge = 0.6;
 
 // Eyes animation state
 int  eyeY, eyeX;          // center positions
