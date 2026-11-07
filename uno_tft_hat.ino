@@ -145,9 +145,9 @@ void drawDashboard() {
   tft.drawLine(10, 40, TFT_SCREEN_WIDTH - 10, 40, ST77XX_GRAY);
 
   // 2x2 grid layout — item dimensions
-  const int cellW = 130, cellH = 105;
-  const int gapX  = 40,  gapY  = 45;
-  const int ox   = 25,  oy   = 50;  // top-left origin of grid
+  const int cellW = 140, cellH = 120;
+  const int gapX  = 45,  gapY  = 50;
+  const int ox   = 35,  oy   = 60;  // top-left origin of grid
 
   struct {
     Mode   mode;
