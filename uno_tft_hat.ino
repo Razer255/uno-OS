@@ -1,24 +1,4 @@
-/*
- * ============================================================
- *  TFT LCD Touch Hat Dashboard — Arduino Uno
- *  2.7" TFT LCD Touch Screen Hat (ST7789 + XPT2046 + SD)
- * ============================================================
- *
- * Dashboard (2x2 grid):
- *   ┌──────────┬──────────┐
- *   │  CLOCK   │ PICTURE  │
- *   │          │  FRAME   │
- *   ├──────────┼──────────┤
- *   │   EYES   │  SPOTIFY │
- *   │  (cute   │  (TODO)  │
- *   │  eyes)   │          │
- *   └──────────┴──────────┘
- *
- * Libraries required:
- *   Adafruit_GFX, Adafruit_ST7789, SD, SPI
- *   (Touch uses direct XPT2046 ADC reads — no Touch lib needed)
- *
- * ============================================================
+/*========================================
  */
 
 #include <SPI.h>
@@ -28,13 +8,13 @@
 #include <Adafruit_ST7789.h>
 
 // ─── Display Configuration ───────────────────────────────
-#define TFT_SCREEN_WIDTH  240
-#define TFT_SCREEN_HEIGHT 320
+#define TFT_SCREEN_WIDTH  500  
+#define TFT_SCREEN_HEIGHT 300
 
 // TFT Hat pin assignments (typical for 2.7" hats)
-#define TFT_CS    10   // TFT SPI chip select
-#define TFT_RST   9    // TFT reset
-#define TFT_DC    8    // TFT data/command
+#define TFT_CS    9   // TFT SPI chip select
+#define TFT_RST   8    // TFT reset
+#define TFT_DC    7    // TFT data/command
 
 // Touch controller pins (XPT2046)
 #define TOUCH_CS  A2   // Touch chip select (custom, not on SPI header)
